@@ -36,7 +36,7 @@ int main() {
             break;
 
         default:
-            printf("Número invalido!!");
+            printf("Número invalido!!!");
         
         }
 
