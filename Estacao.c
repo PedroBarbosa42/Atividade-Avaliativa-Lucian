@@ -1,14 +1,11 @@
-#include <stdio.h>
-#include <string.h>
+#include "leitor.c"
 
 int main() {
-
-    int estacao;
 
     printf("--- Descubra a Estacão do Ano ---\n");
     printf("Digite o número do mês\n 1 = Jan\n 2 = Fev\n 3 = Mar\n 4 = Abr\n 5 = Mai\n 6 = Jun\n 7 = Jul\n 8 = Ago\n 9 = Set\n 10 = Out\n 11 = Nov\n 12 = Dez\n");
 
-    scanf("%d", &estacao);
+    int estacao = ler_int();
 
     switch(estacao) {
         case 1:
@@ -36,7 +33,7 @@ int main() {
             break;
 
         default:
-            printf("Número invalido!!!");
+            printf("Número invalido!!!\n");
         
         }
 
