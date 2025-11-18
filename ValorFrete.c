@@ -1,14 +1,11 @@
-#include <stdio.h>
-#include <string.h>
+#include "leitor.c"
 
 
 int main() {
 
-    int regiao;
-
     printf("Digite o numero correspondente ao seu estado para saber o valor do frete:\n\n1 - Sul\n2 - Sudeste\n3 - Centro-Oeste\n4 - Nordeste\n5 - Norte\n\n ");
 
-    scanf("%d", &regiao);
+    int regiao = ler_int();
 
     switch (regiao) {
         case 1:
